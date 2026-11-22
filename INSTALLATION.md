@@ -15,6 +15,8 @@ Fichier fourni : `rode-rodecaster-pro2-0.1.1.tgz`. Il faut **Bitfocus Companion 
 1. Ouvrir l'interface de Companion (le bouton « Launch GUI » de la fenêtre de Companion).
 2. Aller dans **Modules**.
 3. Cliquer sur **Import module package**, puis choisir `rode-rodecaster-pro2-0.1.1.tgz`.
+   Attention, il y a deux boutons côte à côte : **Import offline module bundle** est fait pour autre chose et
+   répond « No modules found in bundle ».
 4. Le module **RØDECaster Pro II** apparaît dans la liste, en version 0.1.1.
 
 ## 2. Brancher et créer la connexion
