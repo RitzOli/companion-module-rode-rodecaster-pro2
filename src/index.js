@@ -41,9 +41,13 @@ class RCP2Instance extends InstanceBase {
 	}
 
 	async configUpdated(config) {
+		// Réglages qui touchent la liaison : s'ils n'ont pas bougé, armer un apprentissage ne doit pas la couper.
+		const liaison = (c) => JSON.stringify([c?.strictFirmware !== false, c?.useMidi !== false, c?.midiPort || 'MIDI function', c?.wake !== false])
+		const memeLiaison = liaison(this.config) === liaison(config)
 		this.config = config
 		this.#parseMidiMap()
-		if (this.#applyLearnSelection()) return // apprentissage armé : on GARDE la connexion ouverte (pas de reconnect)
+		const arme = this.#applyLearnSelection()
+		if (arme && memeLiaison && this.hidOk) return // apprentissage armé : on GARDE la connexion ouverte (pas de reconnect)
 		this.#disconnect()
 		this.#connect()
 	}
@@ -515,10 +519,11 @@ class RCP2Instance extends InstanceBase {
 	/** Config « Apprendre » : si une case est choisie, arme l'apprentissage puis vide le sélecteur. */
 	#applyLearnSelection() {
 		const m = /^B(\d+)P(\d+)$/.exec(this.config?.learnPad || '')
-		if (!m) return
+		if (!m) return false
 		this.#armMidiLearn(Number(m[1]) - 1, Number(m[2]))
 		this.config = { ...this.config, learnPad: '' } // remet le sélecteur à vide : n'arme qu'une fois
 		this.saveConfig(this.config)
+		return true // sans ce retour, configUpdated coupait et rouvrait la liaison à chaque apprentissage
 	}
 
 	/** Arme l'apprentissage : la PROCHAINE note reçue sera associée à cette case (banque, pad). */
