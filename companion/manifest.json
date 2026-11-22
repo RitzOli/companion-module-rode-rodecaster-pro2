@@ -3,7 +3,7 @@
   "name": "RØDECaster Pro II",
   "shortname": "RCP2",
   "description": "RØDECaster Pro II (RODECaster Pro 2) — mute, PFL, enregistrement, pads, banques et retour d'état via USB HID + position des faders en MIDI. Développé sur firmware 1.7.3.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "repository": "https://github.com/RitzOli/companion-module-rode-rodecaster-pro2",
   "bugs": "https://github.com/RitzOli/companion-module-rode-rodecaster-pro2/issues",

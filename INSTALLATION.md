@@ -1,11 +1,11 @@
-# Installer le module Companion RØDECaster Pro II (version 0.1.0)
+# Installer le module Companion RØDECaster Pro II (version 0.1.1)
 
 Ce module n'est pas dans la liste officielle de Companion : il s'installe à la main, une fois par poste.
 Il pilote une RØDECaster Pro II branchée en USB : mute, PFL, enregistrement, pads (lancement, couleur,
 clignotement), banques, retour d'état, et la position des faders en MIDI. Développé sur le firmware 1.7.3 : avec un
 autre firmware, le module refuse de se connecter (option **Refuser un autre firmware**, cochée d'office).
 
-Fichier fourni : `rode-rodecaster-pro2-0.1.0.tgz`. Il faut **Bitfocus Companion 4 ou plus récent** (essayé avec la
+Fichier fourni : `rode-rodecaster-pro2-0.1.1.tgz`. Il faut **Bitfocus Companion 4 ou plus récent** (essayé avec la
 5.0.2), sous Windows, macOS ou Linux : les pilotes USB et MIDI sont dans le paquet.
 
 ## 1. Importer le module
@@ -14,8 +14,8 @@ Fichier fourni : `rode-rodecaster-pro2-0.1.0.tgz`. Il faut **Bitfocus Companion 
 
 1. Ouvrir l'interface de Companion (le bouton « Launch GUI » de la fenêtre de Companion).
 2. Aller dans **Modules**.
-3. Cliquer sur **Import module package**, puis choisir `rode-rodecaster-pro2-0.1.0.tgz`.
-4. Le module **RØDECaster Pro II** apparaît dans la liste, en version 0.1.0.
+3. Cliquer sur **Import module package**, puis choisir `rode-rodecaster-pro2-0.1.1.tgz`.
+4. Le module **RØDECaster Pro II** apparaît dans la liste, en version 0.1.1.
 
 ## 2. Brancher et créer la connexion
 

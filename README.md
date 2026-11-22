@@ -77,7 +77,7 @@ clignotement ne se voit pas : régler d'abord la couleur de la case.
 
 Connexion en **USB** : Companion doit tourner sur la machine où la console est branchée.
 
-Sur un poste, on importe le paquet [rode-rodecaster-pro2-0.1.0.tgz](rode-rodecaster-pro2-0.1.0.tgz) (à télécharger
+Sur un poste, on importe le paquet [rode-rodecaster-pro2-0.1.1.tgz](rode-rodecaster-pro2-0.1.1.tgz) (à télécharger
 ici) : voir [INSTALLATION.md](INSTALLATION.md).
 Pour développer :
 

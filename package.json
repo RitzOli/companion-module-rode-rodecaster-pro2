@@ -1,6 +1,6 @@
 {
   "name": "rode-rodecaster-pro2",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bitfocus Companion module for the RØDECaster Pro II (USB HID + MIDI). Firmware 1.7.3.",
   "main": "src/index.js",
   "type": "module",
