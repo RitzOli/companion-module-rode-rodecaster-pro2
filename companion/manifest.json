@@ -1,0 +1,41 @@
+{
+  "id": "rode-rodecaster-pro2",
+  "name": "RØDECaster Pro II",
+  "shortname": "RCP2",
+  "description": "RØDECaster Pro II (RODECaster Pro 2) — mute, PFL, enregistrement, pads, banques et retour d'état via USB HID + position des faders en MIDI. Développé sur firmware 1.7.3.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/RitzOli/companion-module-rode-rodecaster-pro2",
+  "bugs": "https://github.com/RitzOli/companion-module-rode-rodecaster-pro2/issues",
+  "maintainers": [
+    { "name": "RitzOli", "email": "RitzOli@users.noreply.github.com" }
+  ],
+  "runtime": {
+    "type": "node22",
+    "api": "nodejs-ipc",
+    "apiVersion": "1.11.3",
+    "entrypoint": "../src/index.js"
+  },
+  "manufacturer": "RØDE",
+  "products": [
+    "RØDECaster Pro II"
+  ],
+  "keywords": [
+    "rode",
+    "rØde",
+    "rodecaster",
+    "rødecaster",
+    "rodecaster pro",
+    "rodecaster pro ii",
+    "rodecaster pro 2",
+    "rcp2",
+    "caster",
+    "podcast",
+    "mixer",
+    "console",
+    "audio",
+    "hid",
+    "midi"
+  ],
+  "legacyIds": []
+}
